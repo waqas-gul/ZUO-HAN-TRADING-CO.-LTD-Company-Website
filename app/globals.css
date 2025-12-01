@@ -1,0 +1,74 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --font-sans: 'Geist', 'Geist Fallback';
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+
+  /* Color tokens - Professional Manufacturing Palette */
+  --color-background: #0f1419;
+  --color-foreground: #f5f5f7;
+  --color-primary: #1e40af;
+  --color-primary-hover: #1e3a8a;
+  --color-secondary: #94a3b8;
+  --color-accent: #f59e0b;
+  --color-accent-light: #fbbf24;
+  --color-border: #2a2a3e;
+  --color-muted: #64748b;
+  --color-success: #10b981;
+  --color-error: #ef4444;
+
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  h1 {
+    @apply text-4xl font-bold tracking-tight lg:text-5xl;
+  }
+
+  h2 {
+    @apply text-3xl font-bold tracking-tight lg:text-4xl;
+  }
+
+  h3 {
+    @apply text-2xl font-bold tracking-tight;
+  }
+
+  h4 {
+    @apply text-xl font-bold;
+  }
+
+  p {
+    @apply leading-relaxed text-secondary;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .button-primary {
+    @apply inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 font-semibold text-white transition-colors hover:bg-primary-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary;
+  }
+
+  /* Simplified button-secondary to remove problematic opacity class */
+  .button-secondary {
+    @apply inline-flex items-center justify-center rounded-md border border-border bg-transparent px-6 py-3 font-semibold text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary;
+  }
+
+  .section-padding {
+    @apply py-12 sm:py-16 lg:py-20;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+}
