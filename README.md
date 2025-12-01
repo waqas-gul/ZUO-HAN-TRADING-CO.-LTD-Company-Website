@@ -47,13 +47,26 @@ ZUO HAN TRADING CO., LTD is a fully registered company in China, providing compl
 <img src="./images/home.png" alt="Light Mode" width="800"/>
 
 ### About page
-<img src="./imgeas/about.png" alt="Dark Mode" width="800"/>
+<img src="./images/about.png" alt="Dark Mode" width="800"/>
 
+### Services page
+<img src="./images/services.png" alt="Dark Mode" width="800"/>
+
+### Categories page
+<img src="./images/categories.png" alt="Dark Mode" width="800"/>
+
+### Blog page
+<img src="./images/blog.png" alt="Dark Mode" width="800"/>
+
+### Contact page
+<img src="./images/contact.png" alt="Dark Mode" width="800"/>
 ---
 
 ## 📦 Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/waqas-gul/zuo-han-trading-website.git
+   git clone https://github.com/waqas-gul/ZUO-HAN-TRADING-CO.-LTD-Company-Website.git
    cd zuo-han-trading-website
+   npm i 
+   npm run dev 
